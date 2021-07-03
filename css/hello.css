@@ -1,0 +1,107 @@
+.hello {
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:1fr;
+}
+.hello__body {
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	min-width: 0;
+	align-items: start;
+}
+.hello__slider{
+	position: relative;
+	grid-column: 1;
+	grid-row: 1;
+	min-width: 0;
+}
+/* Слайдер */ 
+.slick-slider{} 
+/* Слайдер запущен */ 
+.slick-slider.slick-initialized{} 
+/* Слайдер с точками */ 
+.slick-slider.slick-dotted{}	
+/* Ограничивающая оболочка */ 
+.slick-list {
+	overflow: hidden;
+	position: relative;
+}
+.slick-list img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* Лента слайдов */ 
+.slick-track{
+	display: flex;
+	/* align-items: flex-start; */
+}
+/* Слайд */ .slick-slide{} 
+/* Слайд активный (показывается) */ 
+.slick-slide.slick-active{} 
+/* Слайд основной */ 
+.slick-slide.slick-current{} 
+/* Слайд по центру */ 
+.slick-slide.slick-center{} 
+/* Клонированный слайд */ 
+.slick-slide.slick-cloned{}
+/* Стрелка */ 
+.slick-arrow{} 
+/* Стрелка влево */ 
+.slick-arrow.slick-prev{} 
+/* Стрелка вправо */ 
+.slick-arrow.slick-next{} 
+/* Стрелка не активная */ 
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */ 
+.slick-dots{} 
+.slick-dots li{} 
+/* Активная точка */ 
+.slick-dots li.slick-active{} 
+/* Элемент точки */ 
+.slick-dots li button{} 
+
+.hello__slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	width: 40px;
+	height: 73px;
+}
+.hello__slider .slick-arrow.slick-prev{
+	left: 7.8125%;
+	background: url('../img/icons/left.png') 0 0 / 100% no-repeat;
+}
+.hello__slider .slick-arrow.slick-next{
+	right: 7.8125%;
+	background: url('../img/icons/right.png') 0 0 / 100% no-repeat;
+}
+.hello__slider .slick-dots {
+	display: flex;
+	position: absolute;
+	bottom: 3.90625%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	z-index: 10;
+	font-size: 0;
+} 
+.hello__slider .slick-dots li{
+	list-style: none;
+} 
+.hello__slider .slick-dots li.slick-active button{
+	background-color: rgba(255,255,255,0.0);
+	border: 2px solid #d3c1ad;
+}
+.hello__slider .slick-dots li button{
+		font-size: 0;
+		width: 11px;
+		height: 11px;
+		background-color: #999999;
+		border-radius: 50%;
+		margin: 0px 10px;
+} 
+@media (max-width: 1024px) {
+}

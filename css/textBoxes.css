@@ -1,0 +1,101 @@
+.textBoxes {
+	grid-column: 1;
+	grid-row: 4;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto,1200px) 1fr;
+}
+.textBoxes__body {
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+.textBoxes__text {
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-self: center;
+}
+.textBoxes__title {
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffffff;
+	grid-row: 1;
+}
+.textBoxes__title span {
+	color: #c7b299;
+}
+.textBoxes__subtitle {
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #615855;
+	grid-row: 2;
+}
+.textBoxes__button {
+	justify-self: start;
+	align-self: center;
+	grid-column: 2;
+}
+.textBoxes__button a{
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 20px 30px;
+	background-color: #998675;
+	box-shadow: inset 0px -3px 0px 0px #736357;
+	border-radius: 3px;
+}
+
+.textBoxes__button a:hover {
+	background-color: #ac9683;
+}
+.textBoxes__button a:active {
+	position: relative;
+	top: 3px;
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px -3px 0px 0px #4d433b;
+	/* box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5); */
+}
+
+@media (max-width: 1200px) {
+	.textBoxes {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.textBoxes__body {
+		grid-column: 1;
+		display: grid;
+		grid-template-rows: 80% 20%;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		align-items: center;
+		row-gap: 50%;
+	}
+	.textBoxes__text {
+		grid-row: 1;
+	}
+	.textBoxes__button {
+		justify-self: center;
+		align-self: center;
+		grid-column: 1;
+	}
+	.textBoxes__button a{
+		font-size: 14px;
+		line-height: 23px;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding: 20px 30px;
+		background-color: #998675;
+		box-shadow: inset 0px -3px 0px 0px #736357;
+		border-radius: 3px;
+	}
+	
+}

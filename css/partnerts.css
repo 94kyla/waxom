@@ -1,0 +1,18 @@
+.partnerts {
+	grid-row: 10;
+	background-image: url(../img/partnerts_bg.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto,1200px) 1fr;
+}
+.partnerts__body {
+	grid-column: 2;
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-items: center;
+}
+.partnerts__item {
+}

@@ -1,0 +1,75 @@
+/*--------------------*/
+.wrapper {
+	max-height: %;
+	min-width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr minmax(80px, auto); 
+}
+.header {
+	position: fixed;
+	min-width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 40px;
+	z-index: 666;
+}
+.main {
+	display: grid;
+	grid-row: 1;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(1024px,auto) minmax(700px, auto) minmax(700px, auto) minmax(150px, auto) minmax(
+			1200px,
+			auto
+		) minmax(700px, auto) minmax(700px, auto) minmax(300px, auto) minmax(780px, auto) minmax(500px, auto) minmax(
+			500px,
+			auto
+		);
+	justify-items: stretch;
+}
+.footer {
+	background-color: #111111;
+	grid-row: 2;
+}
+
+.hr-line {
+	margin: 20px 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid #333;
+}
+.raleway {
+	font-family: Raleway;
+}
+.montserrat {
+	font-family: Montserrat;
+}
+@media (max-width: 768px) {
+	body.lock {
+		overflow: hidden;
+	}
+}
+
+.hover {
+}
+.hover:hover {
+	color: #c7b299;
+}
+@media (max-width: 1200px) {
+	.main {
+		grid-template-rows: minmax(1040px, auto) minmax(700px, auto) minmax(700px, auto) minmax(300px, auto) minmax(1200px,	auto) minmax(700px, auto) minmax(700px, auto) minmax(300px, auto) minmax(780px, auto) minmax(500px, auto) minmax(500px,auto);
+		justify-items: stretch;
+	}
+	.main {
+		display: grid;
+		grid-row: 1;
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(700px,auto) minmax(700px, auto) minmax(700px, auto) minmax(250px, auto) minmax(
+				1200px,
+				auto
+			) minmax(700px, auto) minmax(700px, auto) minmax(300px, auto) minmax(780px, auto) minmax(500px, auto) minmax(
+				500px,
+				auto
+			);
+		justify-items: stretch;
+	}
+}
